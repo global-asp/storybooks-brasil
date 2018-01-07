@@ -18,40 +18,40 @@ function playpause(n) {
 }
 
 function switchlang(d,l) {
-  en = document.getElementsByClassName("en");
-  sw = document.getElementsByClassName("sw");
+  pt = document.getElementsByClassName("pt");
+  es = document.getElementsByClassName("es");
   def = document.getElementsByClassName("def");
-  btn_en = document.getElementsByClassName("lang-en");
-  btn_sw = document.getElementsByClassName("lang-sw");
-  if (l == "en") {
-    for (var i = 0; i < btn_en.length + 1; i++) {
-      sw[i].style.display = "none";
-      en[i].style.display = "block";
+  btn_pt = document.getElementsByClassName("lang-pt");
+  btn_es = document.getElementsByClassName("lang-es");
+  if (l == "pt") {
+    for (var i = 0; i < btn_pt.length + 1; i++) {
+      es[i].style.display = "none";
+      pt[i].style.display = "block";
       def[i].style.display = "none";
-      btn_en[i].innerHTML = d;
-      btn_sw[i].innerHTML = "sw";
-      btn_en[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','sw')");
+      btn_pt[i].innerHTML = d;
+      btn_es[i].innerHTML = "es";
+      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
+      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','es')");
     }
-  } else if (l == "sw") {
-    for (var i = 0; i < btn_sw.length + 1; i++) {
-      en[i].style.display = "none";
-      sw[i].style.display = "block";
+  } else if (l == "es") {
+    for (var i = 0; i < btn_es.length + 1; i++) {
+      pt[i].style.display = "none";
+      es[i].style.display = "block";
       def[i].style.display = "none";
-      btn_en[i].innerHTML = "en";
-      btn_sw[i].innerHTML = d;
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_en[i].setAttribute("onclick", "switchlang('" + d + "','en')");
+      btn_pt[i].innerHTML = "pt";
+      btn_es[i].innerHTML = d;
+      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
+      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','pt')");
     }
   } else if (l == d) {
-    for (var i = 0; i < btn_sw.length + 1; i++) {
-      en[i].style.display = "none";
-      sw[i].style.display = "none";
+    for (var i = 0; i < btn_es.length + 1; i++) {
+      pt[i].style.display = "none";
+      es[i].style.display = "none";
       def[i].style.display = "block";
-      btn_en[i].innerHTML = "en";
-      btn_sw[i].innerHTML = "sw";
-      btn_en[i].setAttribute("onclick", "switchlang('" + d + "','en')");
-      btn_sw[i].setAttribute("onclick", "switchlang('" + d + "','sw')");
+      btn_pt[i].innerHTML = "pt";
+      btn_es[i].innerHTML = "es";
+      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','pt')");
+      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','es')");
     }
   }
 }
