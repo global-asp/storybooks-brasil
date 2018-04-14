@@ -57,12 +57,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Sentimenti</span>
-<span class="pt">Sentimentos</span>
-<span class="es">Sentimientos</span>
+			<span class="l1">Sentimentos</span>
+			<span class="l2">Sentimientos</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/it/0030/mp3/01.mp3"></audio>
+				<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+				<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
@@ -71,21 +73,23 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Sonia Pighini</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/it">Italian</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/it/level1">Level 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/it/0030/0030.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/it/0030/it-0030_feelings.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Il mio cuore sente molte cose.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Meu coração sente muitas coisas.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Mi corazón siente muchas cosas.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -96,8 +100,8 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('it','pt')" class="btn btn-lg lang-pt" title="Switch between Italian and Portuguese">pt</button>
-		<button onclick="switchlang('it','es')" class="btn btn-lg lang-es" title="Switch between Italian and Spanish">es</button>
+		<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+		<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 	</div>
 </div>
 
@@ -106,14 +110,15 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Mi sento felice quando mia nonna ci racconta storie la sera.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Sinto-me feliz quando minha vovó me conta histórias à noite.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Me siento feliz cuando mi abuelita me cuenta cuentos en las tardes.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -124,8 +129,8 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('it','pt')" class="btn btn-lg lang-pt" title="Switch between Italian and Portuguese">pt</button>
-		<button onclick="switchlang('it','es')" class="btn btn-lg lang-es" title="Switch between Italian and Spanish">es</button>
+		<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+		<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 	</div>
 </div>
 
@@ -134,14 +139,15 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Mi sento sciocca quando gioco con i miei amici.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Sinto-me engraçado quando estou brincando com meus amigos.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Me siento chistosa cuando juego con mis amigos.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -152,8 +158,8 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('it','pt')" class="btn btn-lg lang-pt" title="Switch between Italian and Portuguese">pt</button>
-		<button onclick="switchlang('it','es')" class="btn btn-lg lang-es" title="Switch between Italian and Spanish">es</button>
+		<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+		<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 	</div>
 </div>
 
@@ -162,14 +168,15 @@
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Mi sento triste quando mio padre dice che non ha soldi.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Não me sinto bem quando meu pai diz que não tem dinheiro.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Me siento mal cuando mi papá me dice que no tiene dinero.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -180,8 +187,8 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('it','pt')" class="btn btn-lg lang-pt" title="Switch between Italian and Portuguese">pt</button>
-		<button onclick="switchlang('it','es')" class="btn btn-lg lang-es" title="Switch between Italian and Spanish">es</button>
+		<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+		<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 	</div>
 </div>
 
@@ -190,14 +197,15 @@
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0030/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Mi sento amata quando mia mamma mi abbraccia.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Sinto-me amado quando minha mãe me abraça.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Me siento querida cuando mi mamá me da un abrazo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -208,8 +216,8 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('it','pt')" class="btn btn-lg lang-pt" title="Switch between Italian and Portuguese">pt</button>
-		<button onclick="switchlang('it','es')" class="btn btn-lg lang-es" title="Switch between Italian and Spanish">es</button>
+		<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+		<button onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
 	</div>
 </div>
 

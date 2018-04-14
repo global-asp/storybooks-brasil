@@ -57,12 +57,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">العِقَابُ</span>
-<span class="pt">Castigo</span>
-<span class="es">Castigo</span>
+			<span class="l1">Castigo</span>
+			<span class="l2">Castigo</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+				<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Adelheid Marie Bwire</h3>
@@ -71,21 +73,23 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Mashael Muhanna</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/ar">Arabic</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/ar/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0342/0342.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0342/ar-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	فِي أحَدِ اَلأيَّامِ حَصَلَتْ مَامَا عَلَى اَلكَثِيرِ مِنَ الفَواكِهَ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	Um dia, a mamãe trouxe imensa fruta.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Un día, mamá trajo mucha fruta.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -96,8 +100,8 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -106,15 +110,16 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	سَأَلْنَاهَا: "مَتى يُمْكِنُنا أّن نَأخُذَ القَليلَ مِنَها؟"
 أَجَابَتْ: "سَنَأكُلُ الفَوَاكِهَ في المَسَاءِ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	"Quando podemos comer alguma fruta?," perguntámos. "Vamos comer fruta esta noite," disse a mamãe.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"¿Cuándo podemos comer fruta?" le preguntamos. "Esta noche comeremos fruta," dice mamá.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -125,8 +130,8 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -135,16 +140,17 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	أَخِي رَهِيمْ كَانَ طَمَّاعًا، تَذَوَّقَ كُلَّ الفَواكِهِ، وَأَكَلَ الكَثِيرَ مِنْهَا.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	O meu irmão Rahim é ganancioso.
 
 Provou a fruta toda e comeu muita fruta.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Mi hermano Rahim es glotón. Prueba toda la fruta. Come mucha.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -155,8 +161,8 @@ Provou a fruta toda e comeu muita fruta.
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -165,15 +171,16 @@ Provou a fruta toda e comeu muita fruta.
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	صَرَخَ أَخي الصَّغِيرُ: "انْظُرْ مَاذَا فَعَلَ رَهِيمْ"!
 أَمَّا أَنَا فَقُلتُ: "رَهِيمْ غَيْرُ مُحْتَرَمٍ وَأَنَانِيٌّ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	"Vejam o que o Rahim fez", gritou o meu irmão mais novo. "O Rahim é malandro e egoísta," disse eu.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"¡Mira lo que hizo Rahim!" grita mi hermano pequeño. "Rahim es travieso y egoísta," le respondo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -184,8 +191,8 @@ Provou a fruta toda e comeu muita fruta.
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -194,14 +201,15 @@ Provou a fruta toda e comeu muita fruta.
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	غَضِبَتْ مَامَا مِنْ رَهِيمْ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	A mamãe ficou zangada com o Rahim.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Mamá se enoja con Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -212,8 +220,8 @@ Provou a fruta toda e comeu muita fruta.
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -222,16 +230,17 @@ Provou a fruta toda e comeu muita fruta.
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	وَنَحْنُ أَيْضًا غَضِبْنَا مِنْ رَهِيمْ ولَكِنَّهُ لَمْ يَعْتَذِرْ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	Nós também ficamos zangados com o Rahim.
 
 Mas o Rahim não se arrependeu.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Nosotros también nos enojamos con Rahim. Pero Rahim no está arrepentido.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -242,8 +251,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -252,14 +261,15 @@ Mas o Rahim não se arrependeu.
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	سَأَلَ أَخِي الصَّغِيرُ: "أَلَنْ تُعَاقِبِي رَهِيمْ؟"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	"Não vai castigar o Rahim?", disse o irmão mais novo.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"¿No vas a castigar a Rahim?" pregunta mi hermano pequeño.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -270,8 +280,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -280,14 +290,15 @@ Mas o Rahim não se arrependeu.
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	حَذَّرَتْ مَامَا رَهِيمْ فَقَاَلتْ: "عَلَيْكَ أَنْ تَعْتَذِرَ حَالَّا".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	"Rahim, vai se arrepender em breve," disse a mamãe.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"Rahim, pronto te arrepentirás," le advierte mamá.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -298,8 +309,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -308,14 +319,15 @@ Mas o Rahim não se arrependeu.
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	بَدَأَ رَهِيمْ بِالشُّعُورِ بِالمَرَضِ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	O Rahim não está se sentindo muito bem.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Rahim empieza a sentir náuseas.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -326,8 +338,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -336,14 +348,15 @@ Mas o Rahim não se arrependeu.
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	هَمَسَ رَهِيمْ: "مَعِدَتِي تُؤْلِمُنِي".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	"Dói muito a minha barriga," murmura Rahim.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"Me duele mucho el estómago," susurra Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -354,8 +367,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -364,14 +377,15 @@ Mas o Rahim não se arrependeu.
 
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	عَرَفَتْ مَامَا مَاذَا حَصَلَ: "إنَّ الفَوَاكِهَ عَاقَبَتْ رَهِيمْ"!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	A mamãe sabia que isto ia acontecer. A fruta está castigando Rahim!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Mamá sabía que esto pasaría. ¡La fruta está castigando a Rahim!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -382,8 +396,8 @@ Mas o Rahim não se arrependeu.
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 
@@ -392,16 +406,17 @@ Mas o Rahim não se arrependeu.
 
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3 dir="rtl">
+
 	أَخِيرًا اِعْتَذَرَ رَهِيمْ فَقَالَ لَنَا: "لَنْ أَكُونَ طَمَّاعاً بَعْدَ اليَوْمِ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
 	Mais tarde, Rahim nos pediu desculpa. "Não vou voltar a ser tão ganancioso," prometeu.
 
 E nós acreditamos.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Más tarde, Rahim nos pide disculpas. "No volveré a ser tan glotón," promete. Y todos aceptamos su promesa.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -412,8 +427,8 @@ E nós acreditamos.
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','pt')" class="btn btn-lg lang-pt" title="Switch between Arabic and Portuguese">pt</button>
-		<button onclick="switchlang('ar','es')" class="btn btn-lg lang-es" title="Switch between Arabic and Spanish">es</button>
+		<button onclick="switchlang('ar,pt','pt,es,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,es','pt,es,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and Spanish">es</button>
 	</div>
 </div>
 

@@ -20,41 +20,55 @@ function playpause(n) {
   }
 }
 
-function switchlang(d,l) {
-  pt = document.getElementsByClassName("pt");
-  es = document.getElementsByClassName("es");
+function switchlang(o,c) {
+  options = o.split(",");
+  config = c.split(",");
+  from_lang = options[0];
+  to_lang = options[1];
+  primary = config[0];
+  secondary = config[1];
+  page_lang = config[2];
+  l1 = document.getElementsByClassName("l1");
+  l2 = document.getElementsByClassName("l2");
   def = document.getElementsByClassName("def");
-  btn_pt = document.getElementsByClassName("lang-pt");
-  btn_es = document.getElementsByClassName("lang-es");
-  if (l == "pt") {
-    for (var i = 0; i < btn_pt.length + 1; i++) {
-      es[i].style.display = "none";
-      pt[i].style.display = "block";
+  btn_lang1 = document.getElementsByClassName("lang-primary");
+  btn_lang2 = document.getElementsByClassName("lang-secondary");
+
+  if (to_lang == primary) {
+    for (var i = 0; i < btn_lang1.length; i++) {
+      l1[i].style.display = "block";
+      l2[i].style.display = "none";
       def[i].style.display = "none";
-      btn_pt[i].innerHTML = d;
-      btn_es[i].innerHTML = "es";
-      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','es')");
+      if (page_lang != primary && page_lang != secondary) {
+        btn_lang1[i].innerHTML = page_lang;
+        btn_lang1[i].setAttribute("onclick", "switchlang('" + primary + "," + page_lang + "','" + c + "')");
+        btn_lang2[i].innerHTML = secondary;
+        btn_lang2[i].setAttribute("onclick", "switchlang('" + page_lang + "," + secondary + "','" + c + "')");
+      }
     }
-  } else if (l == "es") {
-    for (var i = 0; i < btn_es.length + 1; i++) {
-      pt[i].style.display = "none";
-      es[i].style.display = "block";
+  } else if (to_lang == secondary) {
+    for (var i = 0; i < btn_lang2.length; i++) {
+      l1[i].style.display = "none";
+      l2[i].style.display = "block";
       def[i].style.display = "none";
-      btn_pt[i].innerHTML = "pt";
-      btn_es[i].innerHTML = d;
-      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','" + d + "')");
-      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','pt')");
+      if (page_lang != primary && page_lang != secondary) {
+        btn_lang1[i].innerHTML = primary;
+        btn_lang1[i].setAttribute("onclick", "switchlang('" + page_lang + "," + primary + "','" + c + "')");
+        btn_lang2[i].innerHTML = page_lang;
+        btn_lang2[i].setAttribute("onclick", "switchlang('" + secondary + "," + page_lang + "','" + c + "')");
+      }
     }
-  } else if (l == d) {
-    for (var i = 0; i < btn_es.length + 1; i++) {
-      pt[i].style.display = "none";
-      es[i].style.display = "none";
+  } else {
+    for (var i = 0; i < btn_lang1.length; i++) {
+      l1[i].style.display = "none";
+      l2[i].style.display = "none";
       def[i].style.display = "block";
-      btn_pt[i].innerHTML = "pt";
-      btn_es[i].innerHTML = "es";
-      btn_pt[i].setAttribute("onclick", "switchlang('" + d + "','pt')");
-      btn_es[i].setAttribute("onclick", "switchlang('" + d + "','es')");
+      if (page_lang != primary && page_lang != secondary) {
+        btn_lang1[i].innerHTML = primary;
+        btn_lang1[i].setAttribute("onclick", "switchlang('" + page_lang + "," + primary + "','" + c + "')");
+        btn_lang2[i].innerHTML = secondary;
+        btn_lang2[i].setAttribute("onclick", "switchlang('" + page_lang + "," + secondary + "','" + c + "')");
+      }
     }
   }
 }

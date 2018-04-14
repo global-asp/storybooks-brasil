@@ -57,12 +57,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">할머니와 함께하는 휴가</span>
-<span class="pt">Férias com a vovó</span>
-<span class="es">De vacaciones con la abuela</span>
+			<span class="l1">Férias com a vovó</span>
+			<span class="l2">De vacaciones con la abuela</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ko/0243/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+				<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Violet Otieno</h3>
@@ -71,21 +73,23 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Scarlet Kim</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/ko">Korean</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/ko/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ko/0243/0243.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ko/0243/ko-0243_holidays.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	오돈고와 아피요는 아빠와 도시에 살았습니다. 그들은 항상 휴가를 기대했습니다. 학교를 가지 않아도 되서만이 아니라 할머니를 뵈러 갈 수 있었기 때문입니다. 할머니께서는 큰 호수 옆에 낚시를 할 수 있는 마을에 사셨습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo e Apiyo viviam na cidade com seu pai. Eles aguardavam ansiosos pelas férias. Não só porque a escola iria fechar, mas também porque eles iriam visitar a avó deles. Ela vivia numa aldeia de pescadores perto de um lago.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo y Apiyo vivían en la ciudad con su padre. Esperaban con ansias sus vacaciones. No sólo porque cerraban la escuela, sino porque iban a visitar a su abuela. Ella vivía en una aldea de pescadores cerca de un gran lago.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -96,8 +100,8 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -106,14 +110,15 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	오돈고와 아피요는 너무 신났습니다 왜냐하면 또 할머니를 뵐 수 있었기 때문입니다. 그 전날 밤, 그들은 짐을 싸서 할머니의 마을로 가는 긴여행을 위해 준비했습니다. 그날 밤 오돈고와 아피요는 다음날의 여행에 대해 얘기 하느라 잠도 자지 않았습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo e Apiyo estavam animados porque era a época de visitar sua avó novamente. Na noite anterior, fizeram suas malas e se prepararam para a longa jornada até a aldeia. Mal conseguiram dormir e conversaram a noite inteira sobre as férias.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo y Apiyo estaban emocionados con la idea de visitar de nuevo a su abuela. La noche antes del viaje, empacaron sus cosas y dejaron todo listo para irse a la aldea. No pudieron dormir y se quedaron toda la noche hablando sobre sus vacaciones.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -124,8 +129,8 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -134,14 +139,15 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	이른 다음날 아침에, 그들은 아빠의 자동차를 타고 할머니의 마을로 향했습니다. 그들은 산을 지나고, 야생 동물들을 지나고, 차 농장을 지났습니다. 그들은 자동차를 세고 노래를 불렀습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Cedinho, na manhã seguinte, foram para a aldeia de carro com seu pai. Passaram por montanhas, animais selvagens e plantações de chá. Contaram carros e cantaram.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Temprano a la mañana siguiente, salieron de viaje a la aldea en el auto de su padre. Pasaron por las montañas y vieron animales salvajes y plantaciones de té. Contaron autos y cantaron canciones.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -152,8 +158,8 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -162,14 +168,15 @@
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	잠시 후 아이들은 피곤해서 잠이 들었습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Depois de um tempo, as crianças estavam tão cansadas que pegaram no sono.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Al poco tiempo, se cansaron y se quedaron dormidos.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -180,8 +187,8 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -190,14 +197,15 @@
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	아빠께서 마을에 도착할 때 쯤 오돈고와 아피요를 깨웠습니다. 그들은 나무아래에 매트위에 쉬시고 계시는 그들의 할머니, 니야-칸야다를 만났습니다. 니야-칸야다는 루오뜻으로 '칸야다 사람들의 딸' 이라는 뜻이였습니다. 할머니께서는 강하고 아름다우셨습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	O pai acordou Odongo e Apiyo quando chegaram na aldeia. Eles encontraram Nyar-Kanyada – sua avó, descansando numa esteira debaixo de uma árvore. Nyar-Kanyada em Luo, significa 'filha do povo de Kanyada'. Ela era uma mulher forte e bonita.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	El padre despertó a Odongo y Apiyo cuando llegaron a la aldea. Se encontraron a su abuela, Nyar-Kanyada, descansando con una manta debajo de un árbol. Nyar-Kanyada significa "hija de la gente de Kanyada" en el idioma Luo. La abuela era una mujer fuerte y hermosa.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -208,8 +216,8 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -218,14 +226,15 @@
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	니야-칸야다는 셋을 집으로 반갑게 환영하셨습니다. 그리고 그들 주변을 돌며 노래를 부르시며 춤을 추시며 즐겁게 해주셨습니다. 오돈고와 아피요는 그들이 도시에서 산 선물을 드리려는 마음에 들떠 있었습니다. 오돈고는 외쳤습니다, "제 선물부터 열어보세요." 아피요도 외쳤습니다, "아니, 제 선물부터 열어보세요!"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Nyar-Kanyada recebeu-lhes dentro de sua casa e dançou em volta do quarto, cantando de alegria. Seus netos estavam animados para lhe dar os presentes que compraram para ela na cidade. "Primeiro abra o meu presente," disse Odongo. "Não, meu presente primeiro!" disse Apiyo.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada les dio la bienvenida a su casa, bailando y cantando de alegría. Sus nietos estaban ansiosos por entregarle los regalos que le trajeron de la ciudad. "Abre mi regalo primero," dijo Odongo. "¡No, mi regalo primero!" dijo Apiyo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -236,8 +245,8 @@
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -246,14 +255,15 @@
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	할머니께서는 선물을 열어보시고 전통적인 방식으로 그의 손녀들을 축복해주셨습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Após ela abrir os presentes, Nyar-Kanyada tradicionalmente abençoou seus netos.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Después de abrir los regalos, Nyar-Kanyada le dio la bendición tradicional a sus nietos.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -264,8 +274,8 @@
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -274,14 +284,15 @@
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	그리고 나서, 오돈고와 아피요는 밖에 나갔습니다. 그들은 나비와 새들을 쫓았습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Então, Odongo e Apiyo saíram para rua. Perseguiram borboletas e pássaros.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Después, Odongo y Apiyo salieron a jugar. Persiguieron mariposas y aves.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -292,8 +303,8 @@
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -302,14 +313,15 @@
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	그들은 나무를 오르고 호숫가에서 물놀이를 했습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Subiram em árvores e se atiraram na água do rio.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Escalaron árboles y chapotearon en el lago.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -320,8 +332,8 @@
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -330,14 +342,15 @@
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	날이 어두워질때쯤 그들은 저녁을 먹으러 집으로 향했습니다. 식사를 끝내기도 전에, 그들은 꾸벅꾸벅 졸기 시작했습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Quando escureceu, voltaram para casa para o jantar. Antes mesmo de terminar de comer, caíram no sono!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Cuando oscureció, volvieron a la casa a cenar. ¡Se estaban quedando dormidos antes de terminar de comer!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -348,8 +361,8 @@
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -358,14 +371,15 @@
 
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	다음날, 아빠는 아이들을 니야-칸야다에게 맡기고 다시 도시로 향했습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	No dia seguinte, o pai voltou dirigindo para cidade e deixou as crianças com Nyar-Kanyada.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Al día siguiente, el padre de los niños se fue de vuelta a la ciudad y los dejó con Nyar-Kanyada.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -376,8 +390,8 @@
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -386,14 +400,15 @@
 
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	오돈고와 아피요는 할머니의 집안일을 도와드렸습니다. 그들은 물을 기르고 장작을 모았습니다. 그들은 닭장에 가서 달걀을 가져오고 텃밭에서 풀을 뜯어 왔습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo e Apiyo ajudaram sua avó com as tarefas de casa. Buscaram água e lenha. Coletaram os ovos das galinhas e apanharam salada do jardim.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo y Apiyo ayudaron a su abuela con las tareas del hogar. Fueron a buscar agua y leña. Recolectaron los huevos de las gallinas y recolectaron verduras de la huerta.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -404,8 +419,8 @@
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -414,14 +429,15 @@
 
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/14.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	니야-칸야다는 그의 손녀들에게 스튜랑 같이 먹을 수 있는부드러운 우갈리를 만드는법을 가르쳐 주셨습니다. 그리고 생선구이와 같이 먹는 코코넛라이스를 만드는 법도 가르쳐 주셨습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Nyar-Kanyada ensinou seus netos a fazer mingau de fubá para comer com guisado. Ela mostrou para eles como fazer arroz de coco para comer com peixe assado.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada le enseñó a sus nietos a hacer ugali para comer con estofado. Les enseñó a hacer arroz con coco para comerlo con pescado asado.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -432,8 +448,8 @@
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -442,14 +458,15 @@
 
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/15.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	어느 하루 아침, 오돈고는 할머니의 소들을 방목하러 나갔습니다. 그는 이웃의 농장을 지나치게 되었습니다. 그곳에 계신 농부께서는 오돈고에게 화가 많이 나있으셨습니다. 농부의 곡식을 먹는 소들을 보고 그는 오돈고에게 협박을 했습니다. 오돈고의 소들이 그의 곡식을 먹으면, 소들을 가지고 갈 것이라고 하셨습니다. 그날 이후로, 오돈고는 소들 관리를 더 철저히 했습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Numa manhã, Odongo levou as vacas da avó para pastar. Elas correram para a fazenda de um vizinho. O fazendeiro ficou brabo com Odongo. Ele ameaçou de ficar com as vacas por comer sua colheita. Depois daquele dia, o menino certificou-se que as vacas não se metessem em confusão.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Una mañana, Odongo llevó a las vacas de su abuela a pastar. Pero las vacas entraron en la granja de un vecino. El vecino se enojó con Odongo. Lo amenazó con quedarse con las vacas por haberse comido sus cultivos. Después de ese día, Odongo se aseguró que las vacas no se volvieran a meter en problemas.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -460,8 +477,8 @@
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -470,14 +487,15 @@
 
 <div id="text16" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/16.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	어느 다른날에는, 아이들이 니야-칸야다와 시장을 갔습니다. 할머니께서는 채소, 설탕 그리고 비누를 파는 공간이 있었습니다. 아피요는 손님들에게 물건값을 말해주는걸 즐겨했습니다. 오돈고는 옆에서 손님께서 구매하신 선물을 포장을 했습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	No outro dia, as crianças foram ao mercado com Nyar-Kanyada. Ela tinha uma barraca em que vendia legumes, açúcar e sabão. Apiyo gostava de dizer o preço das mercadorias para os clientes. Odongo empacotava as mercadorias que os clientes compravam.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Otro día, los niños fueron al mercado con Nyar-Kanyada. Ella tenía un puesto para vender vegetales, azúcar y jabón. A Apiyo le gustaba decirle a los clientes cuánto costaban los productos. Odongo empacaba los productos para los clientes.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -488,8 +506,8 @@
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -498,14 +516,15 @@
 
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/17.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	하루를 다 마치고나서 그들은 다같이 차이 티를 마셨습니다. 그리고 오돈고와 아피요는 할머니께서 버신 돈을 세는것을 도와드렸습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	No final do dia, tomavam chá juntos e ajudavam a avó a contar o dinheiro que ela recebeu.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Al final del día, tomaban té juntos. Le ayudaban a su abuela a contar cuánto dinero había ganado.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -516,8 +535,8 @@
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -526,14 +545,15 @@
 
 <div id="text18" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/18.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	그러나 휴가는 잠깐이였을뿐 다시 도시로 아이들은 돌아가야 했습니다. 니야-칸야다는 오돈고에겐 모자를 주시고 아피요에겐 스웨터를 주셨습니다. 그리고 그들의 여행을 위한 음식들도 넉넉히 채워주셨습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Mas logo as féria acabaram e as crianças tinham que voltar para a cidade. Nyar-Kanyada deu um boné para Odongo e um blusão para Apiyo. Ela embrulhou comida para a viagem.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Pero las vacaciones se terminaron muy rápido y los niños tuvieron que regresar a la ciudad. Nyar-Kanyada le regaló una gorra a Odongo y un chaleco a Apiyo. Luego les empacó comida para su viaje de vuelta a casa.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -544,8 +564,8 @@
 		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -554,14 +574,15 @@
 
 <div id="text19" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/19.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	아버지께서 그들을 데릴러 오셨을때, 그들은 떠나기 싫었습니다. 아이들은 니야-칸야다에게 도시로 같이 가자고 애원했습니다. 그는 웃으며 말씀하셨습니다, "나는 도시에서 살기엔 너무 늙었어. 너네들이 다시 마을로 찾아 올기를 기다릴게."
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Quando seu pai chegou para pegá-los, eles não queriam ir embora. As crianças imploraram Nyar-Kanyada para ir com eles para a cidade. Ela sorriu e disse, "Estou muito velha para a cidade. Ficarei esperando vocês virem para a aldeia novamente."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Cuando su padre vino a recogerlos, no querían irse. Los niños le suplicaron a Nyar-Kanyada que se fuera con ellos a la ciudad. Ella sonrió y les dijo: "Estoy muy vieja para la ciudad. Estaré esperándolos cuando vuelvan a mi aldea otra vez."
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -572,8 +593,8 @@
 		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -582,14 +603,15 @@
 
 <div id="text20" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/20.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	오돈고와 아피요는 할머니를 꽉 안았습니다 그리고 작별 인사를 나눴습니다.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo e Apiyo abraçaram ela bem apertado e disseram tchau.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo y Apiyo le dieron un abrazo muy apretado y le dijeron adiós.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -600,8 +622,8 @@
 		<button class="btn btn-lg" id="playbutton20" onclick="playpause('20')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
@@ -610,14 +632,15 @@
 
 <div id="text21" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/21.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	오돈고와 아피요가 학교를 다시 가던날, 그들은 친구들에게 할머니의 마을에 관해 얘기해주었습니다. 어떤 아이들은 도시의 삶이 좋다 생각 했습니다. 다른 아이들은 마을에서의 삶이 더 좋다고 생각했습니다. 하지만, 제일 중요한것은, 오돈고와 아피요는 훌륭한 할머니께서 계신다는것에 친구 모두가 동의 했다는 사실입니다!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 pt"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Quando Odongo e Apiyo voltaram à escola, eles contaram para seus amigos sobre a vida na aldeia. Alguma crianças acharam que a vida na cidade era boa. Outras acharam que a vida na aldeia era melhor. Mas mais que tudo, todos concordaram que Odongo e Apiyo tinham uma avó maravilhosa!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 es"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Cuando Odongo y Apiyo volvieron a la escuela, le hablaron a sus amigos acerca de la vida en la aldea. Algunos niños opinaron que la vida en la ciudad era buena. Otros opinaron que la aldea era mejor. ¡Pero lo más importante es que todos opinaron que Odongo y Apiyo tenían una abuela maravillosa!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -628,8 +651,8 @@
 		<button class="btn btn-lg" id="playbutton21" onclick="playpause('21')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ko','pt')" class="btn btn-lg lang-pt" title="Switch between Korean and Portuguese">pt</button>
-		<button onclick="switchlang('ko','es')" class="btn btn-lg lang-es" title="Switch between Korean and Spanish">es</button>
+		<button onclick="switchlang('ko,pt','pt,es,ko')" class="btn btn-lg lang-primary" title="Switch between Korean and Portuguese">pt</button>
+		<button onclick="switchlang('ko,es','pt,es,ko')" class="btn btn-lg lang-secondary" title="Switch between Korean and Spanish">es</button>
 	</div>
 </div>
 
