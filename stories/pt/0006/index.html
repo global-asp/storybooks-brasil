@@ -64,7 +64,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-brasil/stories/pt" class="button">Back to stories list</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-brasil/stories/pt">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/01.jpg"></div>
@@ -72,22 +72,22 @@
 		<h1><span class="def">Anansi e o sábio</span>
 			<span class="l1">Anansi e o sábio</span>
 			<span class="l2">Anansi y la sabiduría</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/pt/0006/mp3/01.mp3"></audio>
-				<button onclick="switchlang('pt,pt','pt,es,pt')" class="btn btn-lg lang-primary" title="Switch between Portuguese and Portuguese">pt</button>
-				<button style="display:none" onclick="switchlang('pt,es','pt,es,pt')" class="btn btn-lg lang-secondary" title="Switch between Portuguese and Spanish">es</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Ghanaian folktale</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by" width="38px"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by" width="38px"></span> Priscilla Freitas de Oliveira</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Alfredo Ferreira</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/pt">Portuguese</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/pt/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/pt/0006/pt-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/pt/0006/mp3/01.mp3"></audio>
+			<button onclick="switchlang('pt,pt','pt,es,pt')" class="btn btn-lg lang-primary" title="Switch between Portuguese and Portuguese">pt</button>
+			<button style="display:none" onclick="switchlang('pt,es','pt,es,pt')" class="btn btn-lg lang-secondary" title="Switch between Portuguese and Spanish">es</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Ghanaian folktale</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Priscilla Freitas de Oliveira</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Alfredo Ferreira</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/pt">Portuguese</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/pt/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/pt/0006/pt-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -158,7 +158,7 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	O ganancioso Anansi pensou, "Vou guardar o vaso com segurança no topo de uma árvore bem alta. Assim posso ficar com tudo só para mim!" Ele enrolou um fio longo em volta do vaso e amarrou-o a sua barriga. Então, começou a escalar a árvore, mas foi difícil subir com o vaso batendo o tempo todo em seus joelhos.
+	O ganancioso Anansi pensou, “Vou guardar o vaso com segurança no topo de uma árvore bem alta. Assim posso ficar com tudo só para mim!” Ele enrolou um fio longo em volta do vaso e amarrou-o a sua barriga. Então, começou a escalar a árvore, mas foi difícil subir com o vaso batendo o tempo todo em seus joelhos.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	El codicioso Anansi pensó, “voy a guardar la vasija en la copa de un árbol muy alto. ¡Y será sólo mía!” Hiló un hilo largo, envolvió con él la vasija de barro, y lo ató a su cintura. Empezó a trepar el árbol. Pero se le hacía muy difícil trepar el árbol con la vasija constantemente pegándole en las rodillas.
@@ -187,7 +187,7 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	O tempo todo o filho mais jovem de Anansi tinha ficado embaixo da árvore, observando. Ele disse, "Não seria mais fácil subir se você tivesse amarrado o vaso a suas costas?" Anansi tentou amarrar o vaso cheio de sabedoria a suas costas e, realmente, assim foi muito mais fácil.
+	O tempo todo o filho mais jovem de Anansi tinha ficado embaixo da árvore, observando. Ele disse, “Não seria mais fácil subir se você tivesse amarrado o vaso a suas costas?” Anansi tentou amarrar o vaso cheio de sabedoria a suas costas e, realmente, assim foi muito mais fácil.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Mientras tanto, el hijo pequeño de Anansi lo miraba desde abajo y le dijo, “¿No sería más fácil trepar si te ataras la vasija a tu espalda?” Anansi ató la vasija llena de sabiduría a su espalda y, efectivamente, fue mucho más fácil.
@@ -216,7 +216,7 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Em pouco tempo ele alcançou o topo da árvore. Mas depois parou e pensou, "Eu deveria ser o único a possuir toda a sabedoria, e agora meu filho foi mais sábio do que eu!" Anansi estava tão zangado com isso que arremessou o vaso do topo da árvore.
+	Em pouco tempo ele alcançou o topo da árvore. Mas depois parou e pensou, “Eu deveria ser o único a possuir toda a sabedoria, e agora meu filho foi mais sábio do que eu!” Anansi estava tão zangado com isso que arremessou o vaso do topo da árvore.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	En un instante logró llegar a la copa del árbol. Pero entonces se detuvo a pensar: “Se supone que yo soy quien tiene toda la sabiduría, ¡pero mi hijo fue más listo que yo!” Anansi se enojó tanto que lanzó la vasija desde lo alto del árbol.
@@ -276,7 +276,7 @@
 		<h5><a href="/storybooks-brasil/stories/pt/level3">Level 3</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/stories/1938" target="_blank">Anansi and Wisdom</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 International License</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">

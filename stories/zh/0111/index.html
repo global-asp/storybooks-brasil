@@ -64,7 +64,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-brasil/stories/zh" class="button">Back to stories list</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-brasil/stories/zh">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/01.jpg"></div>
@@ -72,22 +72,22 @@
 		<h1><span class="def">为什么河马没有毛发</span>
 			<span class="l1">Por que é que os hipopótamos não têm cabelo</span>
 			<span class="l2">¿Por qué los hipopótamos no tienen pelo?</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/zh/0111/mp3/01.mp3"></audio>
-				<button onclick="switchlang('zh,pt','pt,es,zh')" class="btn btn-lg lang-primary" title="Switch between Chinese (Mandarin) and Portuguese">pt</button>
-				<button style="display:none" onclick="switchlang('zh,es','pt,es,zh')" class="btn btn-lg lang-secondary" title="Switch between Chinese (Mandarin) and Spanish">es</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Basilio Gimo, David Ker</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by" width="38px"></span> Carol Liddiment</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by" width="38px"></span> Vicky Liu</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Zhuo Sun</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/zh">Chinese (Mandarin)</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/zh/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/zh/0111/zh-0111_hippos.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/zh/0111/mp3/01.mp3"></audio>
+			<button onclick="switchlang('zh,pt','pt,es,zh')" class="btn btn-lg lang-primary" title="Switch between Chinese (Mandarin) and Portuguese">pt</button>
+			<button style="display:none" onclick="switchlang('zh,es','pt,es,zh')" class="btn btn-lg lang-secondary" title="Switch between Chinese (Mandarin) and Spanish">es</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Basilio Gimo, David Ker</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Carol Liddiment</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Vicky Liu</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Zhuo Sun</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/zh">Chinese (Mandarin)</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/zh/level2">Level 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/zh/0111/zh-0111_hippos.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -158,10 +158,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	A Hipopótama não viu que o Coelho estava lá e por isso pisou acidentalmente no pé do Coelho. O Coelho deu um grito e começou a berrar para Hipopótama: "Tu Hipopótama! Não consegue ver que você está pisando no meu pé?"
+	A Hipopótama não viu que o Coelho estava lá e por isso pisou acidentalmente no pé do Coelho. O Coelho deu um grito e começou a berrar para Hipopótama: “Tu Hipopótama! Não consegue ver que você está pisando no meu pé?”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	El Hipopótamo no vio que el Conejo estaba allí y le pisó su patita sin querer. El Conejo empezó a gritarle, "¡Oye Hipopótamo! ¿Acaso no puedes ver que estás pisando mi patita?"
+	El Hipopótamo no vio que el Conejo estaba allí y le pisó su patita sin querer. El Conejo empezó a gritarle, “¡Oye Hipopótamo! ¿Acaso no puedes ver que estás pisando mi patita?”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -187,12 +187,12 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	A Hipopótama pediu desculpas para o Coelho, "Sinto muito, meu amigo. Eu não vi você. Por favor me perdoa!"
-Mas o Coelho não ouviu, e gritou para a Hipopótama: "Você fez
-isso de propósito! Um dia, você vai ver! Vai me pagar!"
+	A Hipopótama pediu desculpas para o Coelho, “Sinto muito, meu amigo. Eu não vi você. Por favor me perdoa!”
+Mas o Coelho não ouviu, e gritou para a Hipopótama: “Você fez
+isso de propósito! Um dia, você vai ver! Vai me pagar!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	El Hipopótamo le pidió disculpas al Conejo: "Lo siento mucho. No te vi. ¡Por favor, perdóname!" Pero el Conejo no le creyó y le dijo, "¡Lo hiciste a propósito! ¡Ya verás que algún día pagarás por esto!"
+	El Hipopótamo le pidió disculpas al Conejo: “Lo siento mucho. No te vi. ¡Por favor, perdóname!” Pero el Conejo no le creyó y le dijo, “¡Lo hiciste a propósito! ¡Ya verás que algún día pagarás por esto!”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -218,11 +218,11 @@ isso de propósito! Um dia, você vai ver! Vai me pagar!"
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Então o Coelho foi procurar o Fogo e disse: "Vai, e queima a Hipopótama quando ela sair da água para comer grama. Ela pisou em mim!"
-Então o fogo respondeu: "Sem problemas, Coelho meu amigo. Eu vou fazer o que Você pediu.”
+	Então o Coelho foi procurar o Fogo e disse: “Vai, e queima a Hipopótama quando ela sair da água para comer grama. Ela pisou em mim!”
+Então o fogo respondeu: “Sem problemas, Coelho meu amigo. Eu vou fazer o que Você pediu.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	El Conejo fue a buscar al Fuego y le dijo, "Anda y quema al Hipopótamo cuando salga del agua y vaya a comer césped. ¡Me pisó!" El Fuego le respondió, "No hay problema, amigo Conejo. Haré exactamente lo que me pides."
+	El Conejo fue a buscar al Fuego y le dijo, “Anda y quema al Hipopótamo cuando salga del agua y vaya a comer césped. ¡Me pisó!” El Fuego le respondió, “No hay problema, amigo Conejo. Haré exactamente lo que me pides.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -248,10 +248,10 @@ Então o fogo respondeu: "Sem problemas, Coelho meu amigo. Eu vou fazer o que Vo
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Mais tarde a Hipopótama estava comendo grama longe do rio quando "zás!" As chamas do fogo começaram a queimar todo o cabelo da Hipopótama.
+	Mais tarde a Hipopótama estava comendo grama longe do rio quando “zás!” As chamas do fogo começaram a queimar todo o cabelo da Hipopótama.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Más tarde, El Hipopótamo estaba comiendo césped lejos del río cuando, "¡Zuum!" El Fuego estalló en llamas y las llamas le quemaron el pelo al Hipopótamo.
+	Más tarde, El Hipopótamo estaba comiendo césped lejos del río cuando, “¡Zuum!” El Fuego estalló en llamas y las llamas le quemaron el pelo al Hipopótamo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -279,12 +279,12 @@ Então o fogo respondeu: "Sem problemas, Coelho meu amigo. Eu vou fazer o que Vo
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	A Hipopótama começou a chorar e correu para a água.
 Todo o cabelo dela foi queimado pelo fogo.
-A Hipopótama não parava de chorar: "O meu cabelo foi queimado pelo fogo! 
+A Hipopótama não parava de chorar: “O meu cabelo foi queimado pelo fogo! 
 Você comeu todo o meu cabelo!
-O meu cabelo desapareceu! O meu bonito bonito cabelo!"
+O meu cabelo desapareceu! O meu bonito bonito cabelo!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	El Hipopótamo comenzó a llorar y corrió directo al agua. Todo su pelo se quemó. El Hipopótamo siguió llorando, "¡Mi pelo se quemó en el fuego! ¡Mi pelo no está! ¡Mi hermoso pelo!"
+	El Hipopótamo comenzó a llorar y corrió directo al agua. Todo su pelo se quemó. El Hipopótamo siguió llorando, “¡Mi pelo se quemó en el fuego! ¡Mi pelo no está! ¡Mi hermoso pelo!”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -310,7 +310,7 @@ O meu cabelo desapareceu! O meu bonito bonito cabelo!"
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	É por isso que a Hipopótama nunca vai para muito longe da água, com medo de ficar queimada pelo fogo. O Coelho ficou muito feliz quando a Hipopótama foi queimada pelo fogo, dizendo: "Me vinguei”.
+	É por isso que a Hipopótama nunca vai para muito longe da água, com medo de ficar queimada pelo fogo. O Coelho ficou muito feliz quando a Hipopótama foi queimada pelo fogo, dizendo: “Me vinguei”.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	El Conejo estaba muy feliz de que el pelo del Hipopótamo se había quemado. Y hasta el día de hoy, por miedo al fuego, el Hipopótamo nunca se aleja del agua.
@@ -341,7 +341,7 @@ O meu cabelo desapareceu! O meu bonito bonito cabelo!"
 		<h5><a href="/storybooks-brasil/stories/zh/level2">Level 2</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/stories/6160" target="_blank">Why hippos have no hair</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 International License</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">

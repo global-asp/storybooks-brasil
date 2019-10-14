@@ -64,7 +64,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-brasil/stories/it" class="button">Back to stories list</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-brasil/stories/it">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/01.jpg"></div>
@@ -72,22 +72,22 @@
 		<h1><span class="def">Bimbo asino</span>
 			<span class="l1">A criança burro</span>
 			<span class="l2">El Niño Burro</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/it/0201/mp3/01.mp3"></audio>
-				<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
-				<button style="display:none" onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Lindiwe Matshikiza</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by" width="38px"></span> Meghan Judge</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by" width="38px"></span> Laura Pighini</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Sonia Pighini</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/it">Italian</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/it/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/it/0201/it-0201_donkey.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/it/0201/mp3/01.mp3"></audio>
+			<button onclick="switchlang('it,pt','pt,es,it')" class="btn btn-lg lang-primary" title="Switch between Italian and Portuguese">pt</button>
+			<button style="display:none" onclick="switchlang('it,es','pt,es,it')" class="btn btn-lg lang-secondary" title="Switch between Italian and Spanish">es</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Lindiwe Matshikiza</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Meghan Judge</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Laura Pighini</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Sonia Pighini</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/it">Italian</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/it/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/it/0201/it-0201_donkey.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -129,7 +129,7 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Quando a forma se aproximou, ela viu que era uma mulher "supergrávida".
+	Quando a forma se aproximou, ela viu que era uma mulher “supergrávida”.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Mientras la figura se acercaba, la niña se dio cuenta que era una mujer embarazada a punto de dar a luz.
@@ -158,10 +158,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Tímida mas corajosa, a menininha aproximou-se da mulher. "Precisamos mantê-la conosco," o povo da menininha decidiu. "Vamos manter ela e o bebê seguros."
+	Tímida mas corajosa, a menininha aproximou-se da mulher. “Precisamos mantê-la conosco,” o povo da menininha decidiu. “Vamos manter ela e o bebê seguros.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Tímida pero valientemente, la pequeña niña se acercó a la mujer. "Tenemos que cuidar de ella," decidieron los familiares de la niña pequeña. "Ella y su bebé estarán a salvo con nosotros".
+	Tímida pero valientemente, la pequeña niña se acercó a la mujer. “Tenemos que cuidar de ella,” decidieron los familiares de la niña pequeña. “Ella y su bebé estarán a salvo con nosotros”.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -187,10 +187,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	O bebê breve estava a caminho. "Empurre!" "Traga cobertas!" "Água!" "Empuuuureeeee!!!"
+	O bebê breve estava a caminho. “Empurre!” “Traga cobertas!” “Água!” “Empuuuureeeee!!!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Al poco tiempo, el bebé empezó a nacer. "¡Puja!" "¡Traigan mantas!" "¡Agua!" "¡¡¡Puuuuujjjjjaaa!!!
+	Al poco tiempo, el bebé empezó a nacer. “¡Puja!” “¡Traigan mantas!” “¡Agua!” “¡¡¡Puuuuujjjjjaaa!!!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -216,10 +216,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Mas quando eles viram o bebê. Todos pularam para trás em choque. "Um burro?!"
+	Mas quando eles viram o bebê. Todos pularam para trás em choque. “Um burro?!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Pero cuando vieron al recién nacido, todos se llevaron una gran sorpresa. "¡¿Un burro?!"
+	Pero cuando vieron al recién nacido, todos se llevaron una gran sorpresa. “¡¿Un burro?!”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -245,10 +245,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Todo mundo começou a discutir. "Dissemos que iríamos mantê-los seguros, e é que faremos," disse alguns. "Mas eles vão nos dar azar!" disseram outros.
+	Todo mundo começou a discutir. “Dissemos que iríamos mantê-los seguros, e é que faremos,” disse alguns. “Mas eles vão nos dar azar!” disseram outros.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Todos empezaron a discutir. "Prometimos que cuidaríamos de la madre y su hijo, y eso es lo que haremos," decían algunos. "¡Pero ellos nos van a traer mala suerte!" decían otros.
+	Todos empezaron a discutir. “Prometimos que cuidaríamos de la madre y su hijo, y eso es lo que haremos,” decían algunos. “¡Pero ellos nos van a traer mala suerte!” decían otros.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -419,10 +419,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Quando parou de correr, já era noite, e o burro estava perdido. "Ih, óh?" cochichou para a escuridão. "Ih, óh?" ecoou de volta. Ele estava sozinho. Enrolando-se como se fosse uma bola, ele caiu num sono profundo e turbulento.
+	Quando parou de correr, já era noite, e o burro estava perdido. “Ih, óh?” cochichou para a escuridão. “Ih, óh?” ecoou de volta. Ele estava sozinho. Enrolando-se como se fosse uma bola, ele caiu num sono profundo e turbulento.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Cuando dejó de correr, ya era de noche y Burro estaba perdido. "¿Hiaaa?" susurró en la oscuridad. "¿Hiaaa?" le respondió su eco. Estaba solo. Se acurrucó y cayó rendido en un sueño profundo e intranquilo.
+	Cuando dejó de correr, ya era de noche y Burro estaba perdido. “¿Hiaaa?” susurró en la oscuridad. “¿Hiaaa?” le respondió su eco. Estaba solo. Se acurrucó y cayó rendido en un sueño profundo e intranquilo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -535,10 +535,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	Lá no alto, entre as nuvens, eles adormeceram. O burro sonhou que sua mãe estava doente e o chamando. E quando se acordou...
+	Lá no alto, entre as nuvens, eles adormeceram. O burro sonhou que sua mãe estava doente e o chamando. E quando se acordou…
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Se quedaron dormidos más arriba de las nubes. Burro soñó que su madre estaba enferma y que lo llamaba. Y cuando despertó...
+	Se quedaron dormidos más arriba de las nubes. Burro soñó que su madre estaba enferma y que lo llamaba. Y cuando despertó…
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -564,10 +564,10 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
-	...as nuvens tinham desaparecido com o seu amigo, o velho homem.
+	…as nuvens tinham desaparecido com o seu amigo, o velho homem.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	...las nubes habían desaparecido junto con su amigo, el anciano.
+	…las nubes habían desaparecido junto con su amigo, el anciano.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -682,7 +682,7 @@
 		<h5><a href="/storybooks-brasil/stories/it/level3">Level 3</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/stories/15028" target="_blank">Donkey Child</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">

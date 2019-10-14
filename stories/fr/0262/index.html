@@ -64,7 +64,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-brasil/stories/fr" class="button">Back to stories list</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-brasil/stories/fr">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0262/01.jpg"></div>
@@ -72,22 +72,22 @@
 		<h1><span class="def">Magozwe</span>
 			<span class="l1">Magozwe</span>
 			<span class="l2">Magozwe</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0262/mp3/01.mp3"></audio>
-				<button onclick="switchlang('fr,pt','pt,es,fr')" class="btn btn-lg lang-primary" title="Switch between French and Portuguese">pt</button>
-				<button style="display:none" onclick="switchlang('fr,es','pt,es,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Spanish">es</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by" width="38px"></span> Lesley Koyi</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by" width="38px"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by" width="38px"></span> Patricia Roth, Translators without Borders</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-brasil/stories/fr">French</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-brasil/stories/fr/level5">Level 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0262/fr-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0262/mp3/01.mp3"></audio>
+			<button onclick="switchlang('fr,pt','pt,es,fr')" class="btn btn-lg lang-primary" title="Switch between French and Portuguese">pt</button>
+			<button style="display:none" onclick="switchlang('fr,es','pt,es,fr')" class="btn btn-lg lang-secondary" title="Switch between French and Spanish">es</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Lesley Koyi</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Patricia Roth, Translators without Borders</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Alexandra Danahy</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/fr">French</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/fr/level5">Level 5</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0262/fr-0262_magozwe.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -168,12 +168,12 @@ Après avoir supporté ce traitement pendant trois ans, Magozwe s’enfuit de ch
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Se Magozwe reclamasse ou fizesse perguntas, o tio batia nele. Quando Magozwe perguntava se podia ir à escola, o tio batia nele e dizia: "É estúpido demais para aprender o que quer que seja."
+	Se Magozwe reclamasse ou fizesse perguntas, o tio batia nele. Quando Magozwe perguntava se podia ir à escola, o tio batia nele e dizia: “É estúpido demais para aprender o que quer que seja.”
 
 Passados três anos, Magozwe fugiu da casa do tio e começou a viver na rua.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Si Magozwe se quejaba o hacía preguntas, su tío le daba una golpiza. Cuando Magozwe le preguntó si podía ir a la escuela, su tío lo golpeó y le dijo, "eres demasiado estúpido para aprender". Después de tres años de vivir así, Magozwe se escapó de la casa de su tío. Empezó a vivir en la calle.
+	Si Magozwe se quejaba o hacía preguntas, su tío le daba una golpiza. Cuando Magozwe le preguntó si podía ir a la escuela, su tío lo golpeó y le dijo, “eres demasiado estúpido para aprender”. Después de tres años de vivir así, Magozwe se escapó de la casa de su tío. Empezó a vivir en la calle.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -306,14 +306,14 @@ Magozwe regarda l’homme, puis la maison, et lui répondit&nbsp;: «&nbsp;Peut-
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Um dia em que estava frio e Magozwe pedia à beira da estrada, um senhor veio falar com ele. "Olá, me chamo Thomas e trabalho aqui perto, num sítio em que você pode vir comer qualquer coisa", disse.
+	Um dia em que estava frio e Magozwe pedia à beira da estrada, um senhor veio falar com ele. “Olá, me chamo Thomas e trabalho aqui perto, num sítio em que você pode vir comer qualquer coisa”, disse.
 
-O senhor apontou para uma casa amarela com um telhado azul e perguntou "Posso contar com você para o almoço?".
+O senhor apontou para uma casa amarela com um telhado azul e perguntou “Posso contar com você para o almoço?”.
 
-Magozwe olhou para o senhor e depois para a casa, respondeu "Talvez" e foi embora.
+Magozwe olhou para o senhor e depois para a casa, respondeu “Talvez” e foi embora.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Hacía frío y Magozwe estaba mendigando en la calle. Un hombre se le acercó. "Hola, soy Thomas. Trabajo cerca de aquí, en un lugar donde podemos darte comida," dijo el hombre. Apuntaba hacia una casa amarilla con techo azul. "Ojalá vayas pronto a buscar comida" le dijo. Magozwe miró al hombre, y después miró la casa. "Quizá", dijo, y se fue.
+	Hacía frío y Magozwe estaba mendigando en la calle. Un hombre se le acercó. “Hola, soy Thomas. Trabajo cerca de aquí, en un lugar donde podemos darte comida,” dijo el hombre. Apuntaba hacia una casa amarilla con techo azul. “Ojalá vayas pronto a buscar comida” le dijo. Magozwe miró al hombre, y después miró la casa. “Quizá”, dijo, y se fue.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -382,10 +382,10 @@ Magozwe répondit calmement&nbsp;: «&nbsp;Je ne sais pas, je ne sais pas lire&n
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Magozwe estava sentado na calçada folheando o seu livro quando Thomas veio sentar ao seu lado. "Sobre o que é que é a história?", indagou Thomas. "É sobre um menino que se tornou piloto", respondeu Magozwe. "Como se chama o menino?", perguntou Thomas. "Não sei, não sei ler", disse Magozwe baixinho.
+	Magozwe estava sentado na calçada folheando o seu livro quando Thomas veio sentar ao seu lado. “Sobre o que é que é a história?”, indagou Thomas. “É sobre um menino que se tornou piloto”, respondeu Magozwe. “Como se chama o menino?”, perguntou Thomas. “Não sei, não sei ler”, disse Magozwe baixinho.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Magozwe estaba sentado en la calle mirando su libro cuando Thomas vino y se sentó a su lado. "¿De qué trata la historia?" preguntó Thomas. "Trata sobre un chico que se convierte en piloto," respondió Magozwe. "¿Cómo se llama el niño?" preguntó Thomas. "No sé porque no sé leer," dijo Magozwe en voz baja.
+	Magozwe estaba sentado en la calle mirando su libro cuando Thomas vino y se sentó a su lado. “¿De qué trata la historia?” preguntó Thomas. “Trata sobre un chico que se convierte en piloto,” respondió Magozwe. “¿Cómo se llama el niño?” preguntó Thomas. “No sé porque no sé leer,” dijo Magozwe en voz baja.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -450,12 +450,12 @@ Thomas lut cette histoire à Magozwe maintes et maintes fois, jusqu’au jour o�
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Quando Magozwe fez dez anos, Thomas ofereceu-lhe um livro novo. O livro contava a história de um menino da aldeia que se tornou num jogador de futebol famoso.
 
-Thomas leu a história para Magozwe muitas vezes até que um dia disse: "Acho que está na hora de você ir para a escola e de aprender a ler. O que você acha?"
+Thomas leu a história para Magozwe muitas vezes até que um dia disse: “Acho que está na hora de você ir para a escola e de aprender a ler. O que você acha?”
 
 Thomas explicou que sabia de um lugar onde as crianças podiam viver e ir à escola.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Cuando Magozwe cumplió alrededor de diez años, Thomas le regaló un nuevo libro de cuentos. Era la historia de un niño de una aldea que creció y se convirtió en un famoso jugador de fútbol. Thomas le leyó esa historia a Magozwe en muchas ocasiones, hasta que un día le dijo, "Creo que ya es tiempo que vayas a la escuela y aprendas a leer. ¿Qué te parece?" Thomas le explicó que conocía un lugar donde los niños podían vivir e ir a la escuela.
+	Cuando Magozwe cumplió alrededor de diez años, Thomas le regaló un nuevo libro de cuentos. Era la historia de un niño de una aldea que creció y se convirtió en un famoso jugador de fútbol. Thomas le leyó esa historia a Magozwe en muchas ocasiones, hasta que un día le dijo, “Creo que ya es tiempo que vayas a la escuela y aprendas a leer. ¿Qué te parece?” Thomas le explicó que conocía un lugar donde los niños podían vivir e ir a la escuela.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -485,10 +485,10 @@ Et si on le battait dans ce nouvel endroit&nbsp;? Il avait peur. «&nbsp;Peut-ê
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Magozwe refletiu sobre como seria mudar-se para este lugar e sobre começar a ir à escola. E se o tio tivesse razão e Magozwe fosse demasiado estúpido para aprender o que quer que fosse?
 
-E se começassem a bater nele? Magozwe tinha medo. "Talvez seja melhor continuar a viver na rua", pensou.
+E se começassem a bater nele? Magozwe tinha medo. “Talvez seja melhor continuar a viver na rua”, pensou.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Magozwe pensó en este nuevo lugar y en ir a la escuela. Pero, ¿y si su tío tenía razón y era demasiado estúpido para aprender? ¿Y si volvían a darle golpizas en este nuevo lugar? Magozwe sintió miedo. "Quizá sea mejor seguir viviendo en la calle," pensó.
+	Magozwe pensó en este nuevo lugar y en ir a la escuela. Pero, ¿y si su tío tenía razón y era demasiado estúpido para aprender? ¿Y si volvían a darle golpizas en este nuevo lugar? Magozwe sintió miedo. “Quizá sea mejor seguir viviendo en la calle,” pensó.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -615,10 +615,10 @@ Magozwe répondit&nbsp;: «&nbsp;C’est l’histoire d’un petit garçon qui v
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Magozwe estava sentado no jardim da casa do telhado verde lendo um livro para a escola quando Thomas veio se sentar ao seu lado. "Que livro está lendo?", perguntou Thomas. "É uma história sobre um menino que se tornou professor", respondeu Magozwe. "Como se chama o menino?", disse Thomas. "Chama-se Magozwe", afirmou Magozwe com um sorriso.
+	Magozwe estava sentado no jardim da casa do telhado verde lendo um livro para a escola quando Thomas veio se sentar ao seu lado. “Que livro está lendo?”, perguntou Thomas. “É uma história sobre um menino que se tornou professor”, respondeu Magozwe. “Como se chama o menino?”, disse Thomas. “Chama-se Magozwe”, afirmou Magozwe com um sorriso.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
-	Magozwe estaba sentado en el patio de la casa del techo verde, leyendo un libro de cuentos de su escuela. Thomas se le acercó y se sentó junto a él. "¿De qué trata la historia?" preguntó Thomas. "Trata sobre un chico que se convierte en profesor," respondió Magozwe. "¿Cómo se llama el chico?" preguntó Thomas. "Su nombre es Magozwe," dijo Magozwe sonriendo.
+	Magozwe estaba sentado en el patio de la casa del techo verde, leyendo un libro de cuentos de su escuela. Thomas se le acercó y se sentó junto a él. “¿De qué trata la historia?” preguntó Thomas. “Trata sobre un chico que se convierte en profesor,” respondió Magozwe. “¿Cómo se llama el chico?” preguntó Thomas. “Su nombre es Magozwe,” dijo Magozwe sonriendo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -646,7 +646,7 @@ Magozwe répondit&nbsp;: «&nbsp;C’est l’histoire d’un petit garçon qui v
 		<h5><a href="/storybooks-brasil/stories/fr/level5">Level 5</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/stories/13213" target="_blank">Magozwe</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
