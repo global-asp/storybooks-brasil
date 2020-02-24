@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-brasil/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-brasil/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-brasil/favicon-16x16.png">
-	<link rel="manifest" href="/storybooks-brasil/site.webmanifest">
-	<link rel="mask-icon" href="/storybooks-brasil/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/storybooks-brasil/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-brasil/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-brasil/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-brasil/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/storybooks-brasil/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/storybooks-brasil/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/storybooks-brasil/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>サキマの歌 - Storybooks Brasil</title>
 	<meta name="description" content="Storybooks Brasil is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in Portuguese as well as the major Indigenous, immigrant and refugee languages of Brazil, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-brasil/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-brasil/stories/ja/0315/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Brasil" href="/storybooks-brasil">
-	<script src="/storybooks-brasil/js/sbc.js"></script>
+	<script src="/storybooks-brasil/js/sbc.min.js"></script>
 </head>
 
 
@@ -49,11 +49,13 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
+<!-- 		<option value="/storybooks-brasil/stories/pt/0315">Portuguese</option> -->
+		<option value="/storybooks-brasil/stories/pt/0315">português</option>
 		<option value="/storybooks-brasil/stories/de/0315">alemão</option>
 		<option value="/storybooks-brasil/stories/ar/0315">árabe</option>
 		<option value="/storybooks-brasil/stories/zh/0315">chinês</option>
@@ -63,7 +65,6 @@
 		<option value="/storybooks-brasil/stories/it/0315">italiano</option>
 		<option value="/storybooks-brasil/stories/ja/0315">japonês</option>
 		<option value="/storybooks-brasil/stories/pl/0315">polonês</option>
-		<option value="/storybooks-brasil/stories/pt/0315">português</option>
 	</select>
 </div>
 
@@ -79,8 +80,7 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-			<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+			<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Peris Wachuka</h3>
@@ -88,15 +88,16 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ja">Japanese</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">The audio for this story is currently not available.</span></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-brasil/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマは両親と４歳の妹と住んでいました。彼らは資産家の男の人の土地に住んでいました。彼らの茅葺き屋根の家は木の並びの最後にありました。
 	</h3></div>
 
@@ -113,8 +114,7 @@
 		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -124,7 +124,6 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマが３歳の時、彼は病気にかかり、視力を失ってしまいました。サキマは才能あふれる少年でもありました。
 	</h3></div>
 
@@ -141,8 +140,7 @@
 		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -152,7 +150,6 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマは他の６歳の子供がしないようなことをたくさんしました。例えば、村で年長の顔ぶれに交じり、重要な問題について議論することができました。
 	</h3></div>
 
@@ -169,8 +166,7 @@
 		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -180,7 +176,6 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマの両親は裕福な男性の家で働いていました。彼らは朝早くに家を出て、夕方遅くに帰ってきました。サキマはその間、幼い妹と家に残されていました。
 	</h3></div>
 
@@ -197,8 +192,7 @@
 		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -208,7 +202,6 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマは歌うことが大好きでした。ある日、母親が彼に「どこでこういう歌を学んだの？サキマ？」と聞きました。
 	</h3></div>
 
@@ -225,8 +218,7 @@
 		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -236,7 +228,6 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマは「僕は歌をただ知っているだけだよ、お母さん。僕は頭の中で歌が聞こえて、それで歌っているんだ。」と答えました。
 	</h3></div>
 
@@ -253,8 +244,7 @@
 		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -264,7 +254,6 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマは妹に歌ってあげることが好きで、特に彼女がお腹を空かせているときに歌ってあげていました。妹は彼のお気に入りの歌を歌っているのをよく聞いていました。彼女はよく心地のいい音楽に合わせて体を揺らしたものでした。
 	</h3></div>
 
@@ -281,8 +270,7 @@
 		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -292,7 +280,6 @@
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	「何度も歌を歌ってくれる？サキマ。」と妹は彼に何度も頼みました。サキマはそれを快く受け入れて何度も何度も歌ってあげました。
 	</h3></div>
 
@@ -309,8 +296,7 @@
 		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -320,7 +306,6 @@
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	ある夕方、両親が家に戻ってくると、とても深刻そうにしていました。サキマは何か悪いことが起きたのだと分かりました。
 	</h3></div>
 
@@ -337,8 +322,7 @@
 		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -348,7 +332,6 @@
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	「何があったの、お母さん、お父さん？」とサキマは聞きました。サキマはお金持ちの男の人の息子が行方不明になっていることを知りました。その男の人はとても悲しみ、孤独を感じていました。
 	</h3></div>
 
@@ -365,8 +348,7 @@
 		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -376,7 +358,6 @@
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	「僕が彼のために歌うよ。彼は再び幸せになるかもしれない。」とサキマは両親に言いました。しかし両親は彼の意見を聞き入れませんでした。「彼はとても裕福だ。お前はただの目の見えない男の子だ。お前の歌が彼を救うと思うのか？」
 	</h3></div>
 
@@ -393,8 +374,7 @@
 		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -404,7 +384,6 @@
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	しかしながら、サキマは諦めませんでした。妹も彼を支持しました。彼女は「私がお腹を空かせているとき、サキマの歌が心地よくさせてくれるんだ。歌は裕福な男の人も心地よくさせるだろうな。」
 	</h3></div>
 
@@ -421,8 +400,7 @@
 		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -432,7 +410,6 @@
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	次の日、サキマは小さな妹にお金持ちの男の人の家までの案内を頼みました。
 	</h3></div>
 
@@ -449,8 +426,7 @@
 		<button class="btn btn-lg disabled" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -460,7 +436,6 @@
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	彼は窓の下に立って、お気に入りの歌を歌い始めました。ゆっくりと、お金持ちの男の人の頭が窓から見え始めました。
 	</h3></div>
 
@@ -477,8 +452,7 @@
 		<button class="btn btn-lg disabled" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -488,7 +462,6 @@
 <div id="text16" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	労働者はやっていることをやめました。彼らはサキマの美しい歌を聞きました。しかしある男の人が言いました、「誰もボスを元気づけられないままだ。この目の不自由な男の子は慰められると思っているのか？」
 	</h3></div>
 
@@ -505,8 +478,7 @@
 		<button class="btn btn-lg disabled" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -516,7 +488,6 @@
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	サキマが歌い終わるその場を離れようと踵を返しました。しかし資産家の男の人が慌てでできて、言いました、「もう一度歌ってくれ。」
 	</h3></div>
 
@@ -533,8 +504,7 @@
 		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -544,7 +514,6 @@
 <div id="text18" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/18.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	まさにその時、二人の男の人たちが担架に誰かをのせてきました。彼らは、殴られ、道のそばに置き去りにされていたお金持ちの男の人の息子を見つけたのでした。
 	</h3></div>
 
@@ -561,8 +530,7 @@
 		<button class="btn btn-lg disabled" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -572,7 +540,6 @@
 <div id="text19" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/19.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	その人は再び息子を見られてとても喜びました。彼は元気づけてくれたサキマを褒めました。彼は息子とサキマを病院に連れていき、サキマは再び目が見えるようになりました。
 	</h3></div>
 
@@ -589,8 +556,7 @@
 		<button class="btn btn-lg disabled" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -599,14 +565,14 @@
 
 <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Ursula Nafula</h5>
-		<h5>Illustrated by: Peris Wachuka</h5>
-		<h5>Translated by: Miho Irie</h5>
-		<h5>Language: <a href="/storybooks-brasil/stories/ja">Japanese</a></h5>
-		<h5><a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=13244" target="_blank">Sakima's song</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Ursula Nafula</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Peris Wachuka</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Miho Irie</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ja">Japanese</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=13244" target="_blank">Sakima's song</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</div>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank">Creative Commons Atribuição 4.0 Não Adaptada</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
@@ -622,7 +588,7 @@
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-brasil/stories/ja" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-brasil/stories/ja" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
 

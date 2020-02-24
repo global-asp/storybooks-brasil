@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-brasil/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-brasil/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-brasil/favicon-16x16.png">
-	<link rel="manifest" href="/storybooks-brasil/site.webmanifest">
-	<link rel="mask-icon" href="/storybooks-brasil/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/storybooks-brasil/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/storybooks-brasil/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/storybooks-brasil/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/storybooks-brasil/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/storybooks-brasil/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/storybooks-brasil/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/storybooks-brasil/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>メンドリとワシ - Storybooks Brasil</title>
 	<meta name="description" content="Storybooks Brasil is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in Portuguese as well as the major Indigenous, immigrant and refugee languages of Brazil, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-brasil/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-brasil/stories/ja/0158/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Brasil" href="/storybooks-brasil">
-	<script src="/storybooks-brasil/js/sbc.js"></script>
+	<script src="/storybooks-brasil/js/sbc.min.js"></script>
 </head>
 
 
@@ -49,11 +49,13 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
+<!-- 		<option value="/storybooks-brasil/stories/pt/0158">Portuguese</option> -->
+		<option value="/storybooks-brasil/stories/pt/0158">português</option>
 		<option value="/storybooks-brasil/stories/de/0158">alemão</option>
 		<option value="/storybooks-brasil/stories/ar/0158">árabe</option>
 		<option value="/storybooks-brasil/stories/zh/0158">chinês</option>
@@ -63,7 +65,6 @@
 		<option value="/storybooks-brasil/stories/it/0158">italiano</option>
 		<option value="/storybooks-brasil/stories/ja/0158">japonês</option>
 		<option value="/storybooks-brasil/stories/pl/0158">polonês</option>
-		<option value="/storybooks-brasil/stories/pt/0158">português</option>
 	</select>
 </div>
 
@@ -79,8 +80,7 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-			<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+			<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Ann Nduku</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
@@ -88,15 +88,16 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ja">Japanese</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">The audio for this story is currently not available.</span></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-brasil/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	昔むかしある所に仲よしのメンドリとワシがおりました。メンドリとワシは他の鳥達とも仲よしでしたが、どの鳥も飛ぶことは出来ませんでした。
 	</h3></div>
 
@@ -113,8 +114,7 @@
 		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -124,7 +124,6 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	ある日この地に飢饉が襲いました。このためワシは食べ物を探しに遠くまで歩かねばならなくなり、クタクタになって戻ってくるのです。「食べ物を探しに行くのに簡単な方法があるはずだ！」とワシは言いました。
 	</h3></div>
 
@@ -141,8 +140,7 @@
 		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -152,7 +150,6 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	一晩明けメンドリは素晴らしい考えを思いつき、他の鳥の抜け落ちた羽を集めてこう言いました。「抜け落ちた羽を自分の羽に縫い付ければ、食べ物探しがたやすくなるだろう。」
 	</h3></div>
 
@@ -169,8 +166,7 @@
 		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -180,7 +176,6 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	ワシはその集落で唯一針を持っておりましたので、初めに縫うことになりました。ワシは美しい翼を一組自身に飾り付けると、空高く飛んでいきました。メンドリは針を借りたもののすぐ縫うのに飽きてしまいましたので、戸棚に針を置き、雛達に食べ物を用意するために台所へと向かいました。
 	</h3></div>
 
@@ -201,8 +196,7 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -212,7 +206,6 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	一方他の鳥達はワシが飛んでいるのを見て、メンドリに「ワシと同じく翼をこしらえたいから、針を貸して欲しい」と頼みました。ほどなく空の至る所に飛ぶ鳥達を見かけるようになりました。
 	</h3></div>
 
@@ -229,8 +222,7 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -240,7 +232,6 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	さて、最後の鳥が借りた針を返しにいくと、メンドリはそこにいませんでした。そこで、メンドリの雛達は針で遊び始めました。遊びに飽きると針を砂地のどこかに置いていってしまいました。
 	</h3></div>
 
@@ -257,8 +248,7 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -268,7 +258,6 @@ A Galinha pediu a agulha emprestada mas ficou logo cansada de costurar. Deixou a
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	その日の午後遅く、ワシは戻るなりメンドリに、「食べ物探しで緩んでしまった羽を直したいから、針を使いたい」と言いました。メンドリは戸棚を、台所を、そして庭を探しましたが、針はどこにも見当たりませんでした。
 	</h3></div>
 
@@ -287,8 +276,7 @@ A Galinha olhou para o armário, procurou no pátio, mas não encontrava a agulh
 		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -298,7 +286,6 @@ A Galinha olhou para o armário, procurou no pátio, mas não encontrava a agulh
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	メンドリはワシに「一日時間をください。そうすれば翼を直し、また食べ物探しに飛ぶことができるでしょう」とお願いをしました。「一日だけだ。針が見つからなかったら、その代わりに雛の内一匹をいただくからな」とワシは答えました。
 	</h3></div>
 
@@ -315,8 +302,7 @@ A Galinha olhou para o armário, procurou no pátio, mas não encontrava a agulh
 		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -326,7 +312,6 @@ A Galinha olhou para o armário, procurou no pátio, mas não encontrava a agulh
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	次の日ワシがメンドリの所に行くと、メンドリは砂を掻いている所を見つけました。しかし、針は見つからなかったようです。そこでワシは素早く下降し、一匹雛をわしづかむと持ち去っていきました。それからというものワシが表れる度に、針を見つけるため砂を掻いているメンドリを見かけるようになったということです。
 	</h3></div>
 
@@ -347,8 +332,7 @@ Sempre que a Águia volta depois disso, encontra a Galinha ciscando a areia à p
 		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -358,7 +342,6 @@ Sempre que a Águia volta depois disso, encontra a Galinha ciscando a areia à p
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-
 	ワシの翼の影が地に映るたびに、メンドリは雛に「さあ、荒野から出て行って！」と言うようになりました。そして雛達はこう答えるのです。「間抜けじゃないから、走って逃げるよ。」
 	</h3></div>
 
@@ -377,8 +360,7 @@ E eles respondem: “Não somos loucos. Vamos correr”.
 		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ja,pt','pt,es,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
-		<button style="display:none" onclick="switchlang('ja,es','pt,es,ja')" class="btn btn-lg lang-secondary" title="Switch between Japanese and Spanish">es</button>
+		<button onclick="switchlang('ja,pt','pt,ja')" class="btn btn-lg lang-primary" title="Switch between Japanese and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -387,14 +369,14 @@ E eles respondem: “Não somos loucos. Vamos correr”.
 
 <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Ann Nduku</h5>
-		<h5>Illustrated by: Wiehan de Jager</h5>
-		<h5>Translated by: kiki</h5>
-		<h5>Language: <a href="/storybooks-brasil/stories/ja">Japanese</a></h5>
-		<h5><a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=2084" target="_blank">Hen and Eagle</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Ann Nduku</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Translated by:</span> kiki</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ja">Japanese</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-brasil/stories/ja/level3">Level 3</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=2084" target="_blank">Hen and Eagle</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.pt_BR" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.pt_BR" target="_blank">Creative Commons Atribuição 3.0 Não Adaptada</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
@@ -410,7 +392,7 @@ E eles respondem: “Não somos loucos. Vamos correr”.
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-brasil/stories/ja" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-brasil/stories/ja" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
 
