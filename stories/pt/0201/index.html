@@ -23,9 +23,7 @@
 	<script src="/storybooks-brasil/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,12 +47,12 @@
 	</section>
 </header>
 
-        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
-<!-- 		<option value="/storybooks-brasil/stories/pt/0201">Portuguese</option> -->
+		<option value="/storybooks-brasil/stories/pt/0201">Portuguese</option>
 		<option value="/storybooks-brasil/stories/pt/0201">português</option>
 		<option value="/storybooks-brasil/stories/de/0201">alemão</option>
 		<option value="/storybooks-brasil/stories/ar/0201">árabe</option>
@@ -75,19 +73,18 @@
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">A criança burro</span>
 			<span class="l1">A criança burro</span>
-			<span class="l2">El Niño Burro</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/pt/0201/mp3/01.mp3"></audio>
-			<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+			<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Lindiwe Matshikiza</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Meghan Judge</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Priscilla Freitas de Oliveira</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Alfredo Ferreira</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/pt">Portuguese</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/pt">português</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/pt/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/pt/0201/pt-0201_donkey.mp3" type="audio/mpeg"></audio></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
@@ -97,7 +94,7 @@
 
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
 	Foi uma menininha que viu pela primeira vez o misterioso formato a distancia.
@@ -106,9 +103,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Foi uma menininha que viu pela primeira vez o misterioso formato a distancia.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Una niña pequeña fue la primera en ver una figura misteriosa a lo lejos.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -117,7 +112,7 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -133,9 +128,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Quando a forma se aproximou, ela viu que era uma mulher “supergrávida”.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Mientras la figura se acercaba, la niña se dio cuenta que era una mujer embarazada a punto de dar a luz.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -144,7 +137,7 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -160,9 +153,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Tímida mas corajosa, a menininha aproximou-se da mulher. “Precisamos mantê-la conosco,” o povo da menininha decidiu. “Vamos manter ela e o bebê seguros.”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Tímida pero valientemente, la pequeña niña se acercó a la mujer. “Tenemos que cuidar de ella,” decidieron los familiares de la niña pequeña. “Ella y su bebé estarán a salvo con nosotros”.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -171,7 +162,7 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -187,9 +178,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O bebê breve estava a caminho. “Empurre!” “Traga cobertas!” “Água!” “Empuuuureeeee!!!”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Al poco tiempo, el bebé empezó a nacer. “¡Puja!” “¡Traigan mantas!” “¡Agua!” “¡¡¡Puuuuujjjjjaaa!!!”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -198,7 +187,7 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -214,9 +203,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Mas quando eles viram o bebê. Todos pularam para trás em choque. “Um burro?!”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Pero cuando vieron al recién nacido, todos se llevaron una gran sorpresa. “¡¿Un burro?!”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -225,7 +212,7 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -241,9 +228,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Todo mundo começou a discutir. “Dissemos que iríamos mantê-los seguros, e é que faremos,” disse alguns. “Mas eles vão nos dar azar!” disseram outros.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Todos empezaron a discutir. “Prometimos que cuidaríamos de la madre y su hijo, y eso es lo que haremos,” decían algunos. “¡Pero ellos nos van a traer mala suerte!” decían otros.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -252,7 +237,7 @@
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -268,9 +253,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	E, então, a mulher se encontrou sozinha novamente. Ela se perguntava o que iria fazer com esse bebê estranho. Ela se perguntava o que iria fazer com ela mesma.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Y así fue como la madre volvió a quedar sola otra vez. Se preguntaba qué hacer con este extraño bebé. Se preguntaba qué hacer consigo misma.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -279,7 +262,7 @@
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -295,9 +278,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Mas, finalmente, teve que aceitar que ele era seu filho e ela era sua mãe.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Pero finalmente tuvo que aceptar que ese era su bebé y que ella era su madre.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -306,7 +287,7 @@
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -322,9 +303,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Agora, se a criança tivesse ficado daquele mesmo tamanho, tudo poderia ter sido diferente. Mas a criança burro cresceu e cresceu até que ele não coubesse mais nas costas de sua mãe. E não importa o quanto ele tentasse, nunca se comportaria como um ser humano. Sua mãe frequentemente ficava cansada e frustrada. Algumas vezes, ela fazia ele trabalhar como um animal.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Si el niño se hubiera quedado del mismo tamaño, todo habría sido diferente. Pero el niño burro creció y creció hasta que su madre no pudo cargarlo más en su espalda. Y no importaba cuánto lo intentase, el niño burro no lograba comportarse como un niño humano. Su madre se la pasaba cansada y frustrada. A veces ella le ordenaba hacer trabajo de animales.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -333,7 +312,7 @@
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -349,9 +328,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Confusão e raiva se acumulavam dentro do burro. Ele não podia fazer isso e não podia fazer aquilo. Ele não poderia ser como isso e não poderia ser como aquilo. Um dia, ele ficou tão brabo que chutou sua mãe no chão.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Burro sentía cada vez más confusión y rabia. Que no podía hacer esto, que no podía hacer aquello. Que él no podía ser esto ni aquello. Un día se puso tan furioso que botó a su madre al suelo de una patada.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -360,7 +337,7 @@
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -376,9 +353,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O burro se encheu de vergonha. Ele correu para tão longe quanto pôde.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Burro se sintió lleno de vergüenza. Corrió tan rápido y lejos como pudo.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -387,7 +362,7 @@
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -403,9 +378,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Quando parou de correr, já era noite, e o burro estava perdido. “Ih, óh?” cochichou para a escuridão. “Ih, óh?” ecoou de volta. Ele estava sozinho. Enrolando-se como se fosse uma bola, ele caiu num sono profundo e turbulento.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Cuando dejó de correr, ya era de noche y Burro estaba perdido. “¿Hiaaa?” susurró en la oscuridad. “¿Hiaaa?” le respondió su eco. Estaba solo. Se acurrucó y cayó rendido en un sueño profundo e intranquilo.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -414,7 +387,7 @@
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -430,9 +403,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O burro acordou e viu um velho homem estranho, encarando-o. Olhou para dentro dos olhos desse velho homem e viu um brilho de esperança.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Cuando Burro despertó, había un extraño anciano mirándolo. Burro le miró a los ojos y comenzó a sentir una chispa de esperanza.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -441,7 +412,7 @@
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -457,9 +428,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O burro foi morrar com o velho homem, que o ensinou muitas maneiras de sobreviver. O burro escutava e aprendia, e, o mesmo fazia o velho homem. Eles ajudavam um ao outro, e riam juntos.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Burro se fue a vivir con el anciano, quien le enseñó muchas formas diferentes de sobrevivir. Burro escuchaba y aprendía, y lo mismo hacía el anciano. Se ayudaban y reían juntos.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -468,7 +437,7 @@
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -484,9 +453,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Uma manhã, o velho homem pediu que o burro o carregasse para o topo de uma montanha.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Una mañana, el anciano le pidió a Burro que lo llevara hasta la cima de una montaña.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -495,7 +462,7 @@
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -511,9 +478,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Lá no alto, entre as nuvens, eles adormeceram. O burro sonhou que sua mãe estava doente e o chamando. E quando se acordou…
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Se quedaron dormidos más arriba de las nubes. Burro soñó que su madre estaba enferma y que lo llamaba. Y cuando despertó…
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -522,7 +487,7 @@
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -538,9 +503,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	…as nuvens tinham desaparecido com o seu amigo, o velho homem.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	…las nubes habían desaparecido junto con su amigo, el anciano.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -549,7 +512,7 @@
 		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -565,9 +528,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Finalmente, o burra sabia o que fazer.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Burro finalmente se dio cuenta de lo que tenía que hacer.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text18" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -576,7 +537,7 @@
 		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -592,9 +553,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O burro encontrou sua mãe, sozinha e chorando por seu filho perdido. Eles ficaram olhando um para o outro por muito tempo. E, então, se abraçaram bem forte.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Burro encontró a su madre, sola y llorando por su hijo perdido. Se quedaron mirándose a los ojos por largo tiempo. Luego se abrazaron muy apretadamente.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text19" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -603,7 +562,7 @@
 		<button class="btn btn-lg" id="playbutton20" onclick="playpause('20')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -619,9 +578,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O burro criança e sua mãe ficaram mais próximos e encontraram várias maneiras de viver lado a lado. Lentamente, ao seu redor, outras famílias começaram a se entender.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	El hijo burro y su madre ya llevan tiempo creciendo juntos y han aprendido a convivir. Lentamente, otras familias se han instalado a vivir cerca de ellos.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text20" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -630,20 +587,21 @@
 		<button class="btn btn-lg" id="playbutton21" onclick="playpause('21')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch to Portuguese">pt</button>
+		<button onclick="switchlang('pt,pt','pt,pt')" class="btn btn-lg lang-primary" title="Switch between português and Portuguese">pt</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h5><span class="colophon-heading">Written by:</span> Lindiwe Matshikiza</h5>
 		<h5><span class="colophon-heading">Illustrated by:</span> Meghan Judge</h5>
 		<h5><span class="colophon-heading">Translated by:</span> Priscilla Freitas de Oliveira</h5>
 		<h5><span class="colophon-heading">Read by:</span> Alfredo Ferreira</h5>
-		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/pt">Portuguese</a></h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/pt">português</a></h5>
 		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-brasil/stories/pt/level3">Level 3</a></h5>
 		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=15028" target="_blank">Donkey Child</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
@@ -666,7 +624,6 @@
 	<a class="btn btn-lg" href="/storybooks-brasil/stories/pt" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
-
 
 
     </div>

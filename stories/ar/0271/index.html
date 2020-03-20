@@ -23,9 +23,7 @@
 	<script src="/storybooks-brasil/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,12 +47,12 @@
 	</section>
 </header>
 
-        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
-<!-- 		<option value="/storybooks-brasil/stories/pt/0271">Portuguese</option> -->
+		<option value="/storybooks-brasil/stories/pt/0271">Portuguese</option>
 		<option value="/storybooks-brasil/stories/pt/0271">português</option>
 		<option value="/storybooks-brasil/stories/de/0271">alemão</option>
 		<option value="/storybooks-brasil/stories/ar/0271">árabe</option>
@@ -73,21 +71,20 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl" dir="rtl" dir="rtl" dir="rtl"><span class="def">اثْنَانِ</span>
+		<h1 dir="rtl"><span class="def">اثْنَانِ</span>
 			<span dir="ltr" class="l1">Dois</span>
-			<span dir="ltr" class="l2">Dos</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ar/0271/mp3/01.mp3"></audio>
-			<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+			<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Carole Bloch</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Richard MacIntosh</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Heba Tesheh, Maaouia Haj Mabrouk</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Mashael Muhanna</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ar">Arabic</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ar">árabe</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/ar/level1">Level 1</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ar/0271/ar-0271_two.mp3" type="audio/mpeg"></audio></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
@@ -97,18 +94,16 @@
 
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	يَدَانِ صَغِيرَتَانِ لنُمْسِكَ بِهِمَا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Duas mãozinhas para segurar.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Dos pequeñas manos para sostener.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -117,7 +112,7 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -126,16 +121,14 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	قَدَمَانِ صَغِيرَتانَ لِنَرْكُلَ بِهِمَا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Dois pezinhos para chutar.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Dos pequeños pies para patear.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -144,7 +137,7 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -153,16 +146,14 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	عَيْنَان صَغِيرَتَانِ لِنَرَى بِهِمَا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Dois olhinhos para ver.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Dos pequeños ojos para ver.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -171,7 +162,7 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -180,16 +171,14 @@
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	اُذُنانِ صَغيرتانِ لِنَسْمَع بِهِما.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Duas orelhinhas para ouvir.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Dos pequeños oídos para escuchar.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -198,7 +187,7 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -207,16 +196,14 @@
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0271/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	وَذِرَاعَا حُبٍّ صَغيرتانِ لِنُعَانِقَ بِهِمَا.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Dois braços carinhosos para ABRAÇAR!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	¡Y dos brazos amorosos para ABRAZAR!
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -225,20 +212,21 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h5><span class="colophon-heading">Written by:</span> Carole Bloch</h5>
 		<h5><span class="colophon-heading">Illustrated by:</span> Richard MacIntosh</h5>
 		<h5><span class="colophon-heading">Translated by:</span> Heba Tesheh, Maaouia Haj Mabrouk</h5>
 		<h5><span class="colophon-heading">Read by:</span> Mashael Muhanna</h5>
-		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ar">Arabic</a></h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ar">árabe</a></h5>
 		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-brasil/stories/ar/level1">Level 1</a></h5>
 		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=3072" target="_blank">Two</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
@@ -268,7 +256,6 @@
 	<a class="btn btn-lg" href="/storybooks-brasil/stories/ar" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
-
 
 
     </div>

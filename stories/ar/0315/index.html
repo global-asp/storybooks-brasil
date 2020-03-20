@@ -23,9 +23,7 @@
 	<script src="/storybooks-brasil/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,12 +47,12 @@
 	</section>
 </header>
 
-        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div> 
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
-<!-- 		<option value="/storybooks-brasil/stories/pt/0315">Portuguese</option> -->
+		<option value="/storybooks-brasil/stories/pt/0315">Portuguese</option>
 		<option value="/storybooks-brasil/stories/pt/0315">português</option>
 		<option value="/storybooks-brasil/stories/de/0315">alemão</option>
 		<option value="/storybooks-brasil/stories/ar/0315">árabe</option>
@@ -73,21 +71,20 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl" dir="rtl" dir="rtl" dir="rtl"><span class="def">أغنية سكيما</span>
+		<h1 dir="rtl"><span class="def">أغنية سكيما</span>
 			<span dir="ltr" class="l1">A canção de Sakima</span>
-			<span dir="ltr" class="l2">La canción de Sakima</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ar/0315/mp3/01.mp3"></audio>
-			<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+			<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/art.svg" alt="Illustrated by"></span> Peris Wachuka</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/global.svg" alt="Translated by"></span> Maaouia Haj Mabrouk</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/megaphone.svg" alt="Read by"></span> Mashael Muhanna</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ar">Arabic</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/language.svg" alt="Language"></span> <a href="/storybooks-brasil/stories/ar">árabe</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/level.svg" alt="Level"></span> <a href="/storybooks-brasil/stories/ar/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-brasil/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ar/0315/ar-0315_sakima.mp3" type="audio/mpeg"></audio></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-brasil/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
@@ -97,18 +94,16 @@
 
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	كان سَكِيمَا يعيش مع والديه وأخته ذات الأربع سنوات في ضيعة يملكها رجل ثري. وكان كوخهم المبني من القش، في نهاية صف من الأشجار.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima morava com seus pais e sua irmã de quatro anos. Eles moravam numa fazenda de um homem muito rico. Sua cabana com telhado de sapê ficava no final de uma fileira de árvores.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Sakima vivía con sus padres y su hermana de cuatro años de edad. Vivían en el terreno de un hombre rico. Su choza de paja estaba al final de una fila de árboles.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -117,7 +112,7 @@
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -126,16 +121,14 @@
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	عندما كان عمر سكيما ثلاث سنوات، مرض وفقد بصره، لكنه كان صبياً موهوباً.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Quando Sakima tinha três anos de idade, adoeceu e perdeu sua visão. Sakima era um menino talentoso.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Cuando Sakima tenía tres años de edad, se enfermó y perdió la vista. Sakima era un chico talentoso.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -144,7 +137,7 @@
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -153,16 +146,14 @@
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	فعل سكيما أشياء عديدة لا يستطيع صبيان في عمر الست سنوات أن يقوموا بها. كان مثلا يجالس كبار القوم في قريته ويناقش معهم قضايا هامة.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima fazia muitas coisas que outros meninos de seis anos não faziam. Por exemplo, ele podia sentar-se com pessoas mais velhas da aldeia e discutir assuntos importantes.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Sakima hacía muchas cosas que los otros chicos de seis años no podían hacer. Por ejemplo, podía sentarse con los miembros mayores de la aldea y discutir asuntos importantes.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -171,7 +162,7 @@
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -180,16 +171,14 @@
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	كان والدا سكيما يعملان في منزل الرجل الثري وكانا يغادران كوخهما باكراً في الصباح ويرجعان في وقت متأخر من المساء. وكان سكيما يمكث في المنزل مع أخته.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Os pais de Sakima trabalhavam na casa do homem rico. Eles saíam de casa cedo pela manhã e retornavam tarde da noite. Sakima ficava com sua irmãzinha.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Los padres de Sakima trabajaban en la casa del hombre rico. Salían a trabajar temprano en la mañana y volvían a casa tarde por la noche. Sakima se quedaba con su hermana pequeña.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -198,7 +187,7 @@
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -207,16 +196,14 @@
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	كان سكيما مولعاً بالغناء، فسألته أمه يوما: “من أين حفظت هذه الأغاني يا سكيما؟”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima adorava cantar. Um dia sua mãe lhe perguntou, “Onde você aprende essas canções, Sakima?”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	A Sakima le encantaba cantar. Un día su madre le preguntó, “¿Dónde aprendes estas canciones, Sakima?”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -225,7 +212,7 @@
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -234,16 +221,14 @@
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	أجاب سكيما: “إنها تأتي هكذا يا أمي، أسمعها في رأسي فأغنيها”.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima respondeu, “Elas só vêm, mãe. Escuto elas na miha cabeça e, então, canto.”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Sakima le respondió, “Simplemente llegan, madre. Las escucho en mi cabeza y después las canto.”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -252,7 +237,7 @@
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -261,16 +246,14 @@
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	كان سكيما يحب أن يغني لأخته، خاصة إذا ما شعرت بالجوع. فكانت تصغي إلى أغنيته المفضلة وتتمايل مع اللحن المهدئ اللطيف.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima gostava de cantar para sua irmãzinha; especialmente, se ela estivesse com fome. Sua irmã ficava escutando ele cantar sua canção favorita. Ela se balançava com a música suave.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	A Sakima le gustaba cantarle a su hermana pequeña, especialmente cuando ella tenía hambre. Su hermana le escuchaba cantar la canción favorita de Sakima. Y se relajaba bailando con su canción.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -279,7 +262,7 @@
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -288,16 +271,14 @@
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	وكانت أخت سكيما تتوسل إليه: “هلا أعدت الغناء من جديد، يا سكيما؟”. وكان سكيما يلبي طلب أخته فيعيد الغناء مرات.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	“Pode cantar de novo e de novo, Sakima,” sua irmã implorava. Sakima concordava e cantava de novo e de novo.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	“¿Podrías cantarla una y otra vez, Sakima?”, le suplicaba su hermana. Sakima asentía y le cantaba una y otra vez.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -306,7 +287,7 @@
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -315,16 +296,14 @@
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	وفي إحدى الأمسيات، رجع والدا سكيما إلى المنزل ولزما الصمت على غير العادة. عرف سكيما أن هناك شيئاً ما يقلقهما.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Uma noite quando seus pais retornaram para casa, estavam muito quietos. Sakima sabia que alguma coisa estava errada.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Una noche después del trabajo, sus padres volvieron muy callados. Sakima sabía que algo estaba mal.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -333,7 +312,7 @@
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -342,16 +321,14 @@
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	سأل سكيما: “أمي، أبي، ما خطبكما؟” أخبره والداه أن ابن الرجل الثري قد اختفى وأن والده يشعر بالوحدة وبالحزن الشديد.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	“O que há de errado, mãe, pai?” Sakima perguntou. Sakima ficou sabendo que o filho do homem rico havia desaparecido. O homem estava muito triste e solitário.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	“¿Cuál es el problema, madre, padre?” Preguntó Sakima. Sakima se enteró que el hijo del hombre rico se había perdido. El hombre se sentía muy triste y solo.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -360,7 +337,7 @@
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -369,16 +346,14 @@
 
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	قال سكيما لوالديه: “أنا أستطيع أن أغني له… قد يفرح من جديد”. لكن والداه نهراه: “إنه غني جداً، وأنت لا تعدو أن تكون صبياً أعمى. هل تظن أن أغنيتك سوف تساعده؟”.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	“Posso cantar uma canção para ele. Talvez ele fique feliz novamente,” Sakima falou para seu pais. Mas seus pais rejeitaram. “Ele é muito rico. Você é só um menino cego. Você acha mesmo que sua canção vai ajudá-lo?”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	“Yo puedo cantar para él. Quizá eso lo hará feliz,” le dijo Sakima a sus padres. Pero sus padres lo desestimaron. “Él es muy rico. Tú sólo eres un chico ciego. ¿Crees que tu canción lo va a ayudar?”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -387,7 +362,7 @@
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -396,16 +371,14 @@
 
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	لكن سكيما لم ييأس، وكانت شقيقه الصغيرة تدعمه قائلة: “إن أغاني سكيما تريحني عندما أكون جائعة. وهي سوف تريح الرجل الثري أيضا”.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	De qualquer modo, Sakima não desistiu. E a sua irmãzinha o apoiou. Ela disse, “As canções de Sakima me acalmam quando tenho fome. Elas acalmarão o homem rico também.”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Pero Sakima no se rindió. Su hermana pequeña lo apoyó. Le dijo: “Las canciones de Sakima me ayudan cuando tengo hambre. Van a tranquilizar al hombre rico también.”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -414,7 +387,7 @@
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -423,16 +396,14 @@
 
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/14.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	وفي اليوم الموالي، طلب سكيما من شقيقته أن تقوده إلى منزل الرجل الثري.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	No dia seguinte, Sakima pediu para que sua irmãzinha lhe guiasse até a casa do homem rico.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Al día siguiente, Sakima le pidió a su hermana pequeña que lo llevara a la casa del hombre rico.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -441,7 +412,7 @@
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -450,16 +421,14 @@
 
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/15.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	وقف سكيما تحت نافذة كبيرة وبدأ ينشد أغنيته المفضلة. وشيئا فشيئا، بدأ الرجل الثري يطل برأسه من خلال النافذة الكبيرة.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Ele parou perto de uma janelona e começou a cantar sua canção favorita. Lentamente, a cabeça do homem rico começou a aparecer na janelona.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Se paró debajo de una gran ventana y empezó a cantar su canción favorita. Lentamente, el hombre rico comenzó a asomar su cabeza por la gran ventana.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -468,7 +437,7 @@
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -477,16 +446,14 @@
 
 <div id="text16" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/16.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	توقف العمال عن العمل وأخذوا يستمعون لأغنية سكيما الرائعة. لكن أحدهم قال: “لا أحد استطاع مواساة صاحب الضيعة إلى حد الآن. فهل يعتقد هذا الصبي الأعمى أنه قادر على مواساته؟”.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Os operários pararam o que eles estavam fazendo. Eles ouviram a bela canção de Sakima. Mas um homem disse, “Ninguém foi capaz de consolar o chefe. Este menino cego acha que o consolará?”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Los trabajadores dejaron de hacer sus tareas. Escucharon la hermosa canción de Sakima. Pero un hombre dijo, “Nadie ha podido consolar al jefe. ¿Acaso este chico ciego cree que él puede consolarlo?”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -495,7 +462,7 @@
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -504,16 +471,14 @@
 
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/17.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	أنهى سكيما الغناء واستدار مغادراً، لكن الرجل الثري خرج مسرعا وقال مخاطبا سكيما: “أرجوك، غنِّ لي من جديد”.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Sakima terminou de cantar a canção e se virou para ir embora. Mas o homem rico se apressou e disse, “Por favor, cante novamente.”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Sakima terminó de cantar y se dio vuelta para irse. Pero el hombre rico salió de prisa y dijo: “Por favor canta de nuevo.”
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -522,7 +487,7 @@
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -531,16 +496,14 @@
 
 <div id="text18" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/18.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	وفي تلك اللحظة بالذات، أقبل رجلان يحملان شخصا على محفة. إنه ابن الرجل الثري. لقد وجداه ملقا على حافة الطريق بعد أن أُشْبِعَ ضرباً.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Naquele mesmo momento, dois homens vieram carregando alguém numa maca. Eles tinham encontrado o filho do homem rico espancado e deixado no acostamento da estrada.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	En ese mismo momento, llegaron dos hombres que llevaban a alguien en una camilla. Habían encontrado al hijo del hombre rico apaleado y tirado a un lado del camino.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -549,7 +512,7 @@
 		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
@@ -558,16 +521,14 @@
 
 <div id="text19" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/19.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl" dir="rtl" dir="rtl" dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	فرح الرجل الثري كثيراً لرؤية ابنه من جديد وكافأ سكيما لمواساته له، فأخذه مع ابنه إلى المستشفى وقرر أن يساعده على استرجاع بصره.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	O homem rico ficou tão feliz em ver seu filho novamente. Ele recompensou Sakima por consolá-lo. Levou seu filho e Sakima para o hospital para que Sakima recuperasse a sua visão.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	El hombre rico estaba muy feliz de ver a su hijo otra vez. Y le dio una recompensa a Sakima por consolarlo. Llevó a su hijo y a Sakima al hospital para que Sakima pudiera recuperar la vista.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text18" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -576,20 +537,21 @@
 		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Portuguese">pt</button>
+		<button onclick="switchlang('ar,pt','pt,ar')" class="btn btn-lg lang-primary" title="Switch between árabe and Portuguese">pt</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h5><span class="colophon-heading">Written by:</span> Ursula Nafula</h5>
 		<h5><span class="colophon-heading">Illustrated by:</span> Peris Wachuka</h5>
 		<h5><span class="colophon-heading">Translated by:</span> Maaouia Haj Mabrouk</h5>
 		<h5><span class="colophon-heading">Read by:</span> Mashael Muhanna</h5>
-		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ar">Arabic</a></h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-brasil/stories/ar">árabe</a></h5>
 		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-brasil/stories/ar/level3">Level 3</a></h5>
 		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=13244" target="_blank">Sakima's song</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
@@ -612,7 +574,6 @@
 	<a class="btn btn-lg" href="/storybooks-brasil/stories/ar" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
-
 
 
     </div>
